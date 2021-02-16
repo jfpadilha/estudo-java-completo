@@ -39,3 +39,5 @@
 
 --| textos que aprecem em roxo são palavras reservadas da linguagem java
 Junto com essas palavras estao os tipos primitivos
+
+==| CTRL + shift + o -> organização dos imports
