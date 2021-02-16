@@ -1,7 +1,7 @@
 package fundamentos;
 
 /**
- * Aula 18 e 19- Variaveis e constantes
+ * Aula 18 e 19 - Variaveis e constantes
  * @author joao
  *
  */
