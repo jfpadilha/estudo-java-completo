@@ -1,0 +1,16 @@
+
+=========| Visão geral de algoritmos:
+
+- Algoritmo é uma sequencia de passos, que podem se repetir até que:
+	ter ma quantidade X de repetições ou até que algo fora ocorra
+
+- Algoritmo pode ter descisão
+
+- Algotitmo não é software
+
+-----| Representação de algotitmos
+- Fluxogramas
+- linguagem natural
+- linguagem artificial (java, php, js, go etc)
+- pseudo-linguagem (soma dois valores)
+

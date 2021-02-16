@@ -1,3 +1,11 @@
+# Pastas e outros
+resources/
+.metadata/
+
+# Sublimes inuteis
+*.sublime-workspace
+*.sublime-project
+
 # Compiled class file
 *.class
 
