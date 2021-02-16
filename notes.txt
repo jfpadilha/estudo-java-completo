@@ -14,3 +14,25 @@
 - linguagem artificial (java, php, js, go etc)
 - pseudo-linguagem (soma dois valores)
 
+=======| Estruturas de dados básicas:
+- Int
+- Real
+- Letra
+- Boll
+
+=======| TIPOS PRIMITIVOS (java possui 8 tipos)
+
+--| Numericos:
+- Byte 	1 byte -> -128 a 127
+- Short 2 byte -> 0 a 32767 + e -
+- Int	4 byte -> 2 bi
+- Long	8 Byte -> maior qe Int
+
+- FLoat		4 byte
+- Double	8 byte
+
+--| 
+- CHar
+- Boolean (falso ou true)
+- 
+
