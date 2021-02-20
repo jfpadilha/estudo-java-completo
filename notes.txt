@@ -41,3 +41,15 @@
 Junto com essas palavras estao os tipos primitivos
 
 ==| CTRL + shift + o -> organização dos imports
+
+
+========== | Aula 29
+
+====| Sobre Wrappers - tipos primitivos:
+- na conversao entre tipos numéricos:
+existem 4 tipos numéricos inteiros
+- byte, short, int e long
+
+- Converter byte -> short -> int -> long | é feita conversao implícita (um cabe no próximo não tem problema para conversao)
+
+- Agora converter ao contrário, precisa fazer de forma explícita
