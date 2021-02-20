@@ -11,6 +11,8 @@ public class PrimitivoVsObjeto {
 //		WRAPPERS: sao a versao objeto dos tipos primitivos
 		int a = 123;	
 //		"a." não tem nenhum comportamentopois nao eh objeto
+		
+		System.out.println("texte");
 
 		
 		
