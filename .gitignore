@@ -5,6 +5,7 @@ resources/
 # Sublimes inuteis
 *.sublime-workspace
 *.sublime-project
+notes.txt
 
 # Compiled class file
 *.class
