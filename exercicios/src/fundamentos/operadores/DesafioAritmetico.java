@@ -1,4 +1,4 @@
-package fundamentos;
+package fundamentos.operadores;
 
 public class DesafioAritmetico {
 	public static void main(String[] args) {
