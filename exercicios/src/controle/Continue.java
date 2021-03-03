@@ -1,5 +1,12 @@
 package controle;
 
+/**
+ * Quando chegar no 5 ele volta no começo do for
+ * 
+ * @author joao
+ *
+ */
+
 public class Continue {
 
 	public static void main(String[] args) {
