@@ -10,14 +10,12 @@ package Classe;
 public class DataMain {
 
 	public static void main(String[] args) {
-		Data dt = new Data();
-		dt.dia = 22;
-		dt.mes = 07;
-		dt.ano = 1983;
-		String ds = "Sexta-feira";
+		Data dt = new Data(22, 07, 1983);
+		
+		Data dt2 = new Data();
 
-		System.out.println(dt.obterDataFormatada());
-		System.out.println(dt.obterDataFormatada(ds));
+		System.out.println(dt.obterDataFormatada("Segunda-feira"));
+		System.out.println(dt2.obterDataFormatada());
 
 	}
 }
