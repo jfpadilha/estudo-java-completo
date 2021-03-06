@@ -1,7 +1,7 @@
 package Classe;
 
 /**
- * Concatenar Strings usando StringBuilder Concatenar usando String.format
+ * Concatenar Strings usando StringBuilder e  Concatenar usando String.format
  * 
  * @author joao
  *

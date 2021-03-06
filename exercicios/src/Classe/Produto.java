@@ -7,6 +7,20 @@ public class Produto {
 	double preco;
 	double desconto;
 
+	// Construtores
+	Produto() {
+	}
+
+	Produto(String nome) {
+		this.nome = nome;
+	}
+	
+	Produto(String nome, double preco, double desconto) {
+		this.nome = nome;
+		this.preco = preco;
+		this.desconto = desconto;
+	}
+
 	// retorno eh double
 	double precoComDesconto() {
 		return preco - (preco * desconto / 100);
