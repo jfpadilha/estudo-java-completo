@@ -50,6 +50,6 @@ public class Data {
 		 * dt.append(dia).append('/').append(mes).append('/').append(ano).append(" - ").
 		 * append(diaSemana); return dt.toString();
 		 */
-		return String.format("%d/%d/%d - %s\n", dia, mes, ano, diaSemana);
+		return String.format("%d/%d/%d - %s\n", dia, mes, ano, diaSemana.toUpperCase());
 	}
 }
