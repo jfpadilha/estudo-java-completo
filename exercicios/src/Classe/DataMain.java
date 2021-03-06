@@ -14,8 +14,10 @@ public class DataMain {
 		dt.dia = 22;
 		dt.mes = 07;
 		dt.ano = 1983;
+		String ds = "Sexta-feira";
 
-		System.out.printf("data: %d/%d/%d", dt.dia, dt.mes, dt.ano);
+		System.out.println(dt.obterDataFormatada());
+		System.out.println(dt.obterDataFormatada(ds));
 
 	}
 }
