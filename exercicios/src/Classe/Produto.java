@@ -1,35 +1,42 @@
 package Classe;
 
+/**
+ * Loja vai ter 25% de desconto a todos os produtos Padrão 25%
+ * 
+ * Quando variar o desconto, vai variar para todos
+ * 
+ * @author joao
+ *
+ */
+
 public class Produto {
 
-	// atributos
+	/**** Atributos ****/
 	String nome;
 	double preco;
-	double desconto;
+	static double desconto;
 
-	// Construtores
+	/**** Construtores ****/
 	Produto() {
 	}
 
 	Produto(String nome) {
 		this.nome = nome;
 	}
-	
-	Produto(String nome, double preco, double desconto) {
+
+	Produto(String nome, double preco) {
 		this.nome = nome;
 		this.preco = preco;
-		this.desconto = desconto;
 	}
 
-	// retorno eh double
+	/**** Métodos ****/
+
 	double precoComDesconto() {
-		return preco - (preco * desconto / 100);
-//		return preco * (1 - desconto);
+		return preco - (preco * desconto / 100); //
+		// return preco * (1 - desconto);
 	}
 
-	// retorno double, mesmo nome, mas a assinatura eh diferente
-	double precoComDesconto(double descontoDoGerente) {
-		return preco - (preco * (desconto + descontoDoGerente) / 100);
-//		return preco * (1 - desconto);
+	static double precoComDesconto(double preco) {
+		return preco - (preco * desconto / 100);
 	}
 }
