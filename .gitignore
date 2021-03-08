@@ -1,6 +1,7 @@
 # Pastas e outros
 resources/
 .metadata/
+print_aula.png
 
 # Sublimes inuteis
 *.sublime-workspace

@@ -1,10 +1,17 @@
 package Classe;
 
+/**
+ * Calcula e retorna o valor de área de um circulo
+ * 
+ * @author joao
+ *
+ */
+
 public class AreaCirc {
 
 	double raio;
-	final static double PI = 3.1415; // com o "final" essa variavel será constante, não alterável
-	// static double pi = 3.14;
+	// com o "final" essa variavel será constante, não alterável com valor fixo
+	final static double PI = 3.1415;
 
 	// Construtores
 	public AreaCirc(double raio) {
