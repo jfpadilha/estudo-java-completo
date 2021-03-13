@@ -1,4 +1,4 @@
-package Classe;
+package classe;
 
 /**
  * Concatenar Strings usando StringBuilder e Concatenar usando String.format

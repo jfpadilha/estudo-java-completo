@@ -1,4 +1,4 @@
-package Classe;
+package classe;
 
 /**
  * nessa classe sera executado instanciado a classe "produto"

@@ -1,4 +1,4 @@
-package Classe;
+package classe;
 
 /**
  * Loja vai ter 25% de desconto a todos os produtos Padrão 25%

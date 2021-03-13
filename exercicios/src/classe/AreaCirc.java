@@ -1,4 +1,4 @@
-package Classe;
+package classe;
 
 /**
  * Calcula e retorna o valor de área de um circulo

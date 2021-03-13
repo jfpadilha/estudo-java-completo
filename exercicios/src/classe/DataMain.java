@@ -1,4 +1,4 @@
-package Classe;
+package classe;
 
 /**
  * Classe main usada para instanciamento da classe Data
@@ -11,7 +11,7 @@ public class DataMain {
 
 	public static void main(String[] args) {
 		Data dt = new Data(22, 07, 1983);
-
+		
 		Data dt2 = new Data();
 
 		System.out.println(dt.obterDataFormatada("terça"));
