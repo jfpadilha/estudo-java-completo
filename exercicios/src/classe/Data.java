@@ -44,7 +44,7 @@ public class Data {
 		 * dt.toString();
 		 */
 		
-		final String formato = "%d/%d/%d";
+		final String formato = "%d/%d/%d";	//será uma constante local
 		
 		return String.format(formato, this.dia, this.mes, this.ano);
 	}
