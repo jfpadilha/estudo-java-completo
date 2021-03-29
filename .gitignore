@@ -7,6 +7,8 @@ print_aula.png
 *.sublime-workspace
 *.sublime-project
 notes.txt
+*project
+*classpath
 
 # Compiled class file
 *.class
@@ -31,3 +33,4 @@ notes.txt
 
 # virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
 hs_err_pid*
+/bin/
