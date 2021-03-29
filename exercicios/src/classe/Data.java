@@ -14,7 +14,7 @@ public class Data {
 	int dia;
 	int mes;
 	int ano;
-	String diaSemana;
+	static String diaSemana; // o valor dessa variavel tera uma instancia unica
 
 	// Construtores
 	Data() {
@@ -34,7 +34,7 @@ public class Data {
 		this.dia = dia;
 		this.mes = mes;
 		this.ano = ano;
-		this.diaSemana = diaSemana;
+//		this.diaSemana = diaSemana; // nao precisa fazer esse 'set'
 
 	}
 
@@ -62,11 +62,13 @@ public class Data {
 		 * dt.append(dia).append('/').append(mes).append('/').append(ano).append(" - ").
 		 * append(diaSemana); return dt.toString();
 		 */
-		return String.format("%d/%d/%d - %s\n", this.dia, this.mes, this.ano, this.diaSemana.toUpperCase());
+//		String d = "%d/%d/%d - %s\n";	// D eh uma variavel local, soh funciona dentro do metodo
+		final String d = "%d/%d/%d - %s\n"; // d eh uma variavel constante, nao pode ser modificada
+		return String.format(d, this.dia, this.mes, this.ano, diaSemana.toUpperCase());
 	}
 
 	void imprimirDataFormatada() {
-		System.out.println(obterDataFormatada(this.diaSemana));
+		System.out.println(obterDataFormatada(diaSemana));
 	}
 
 }
