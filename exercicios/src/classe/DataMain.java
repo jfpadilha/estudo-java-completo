@@ -10,11 +10,11 @@ package classe;
 public class DataMain {
 
 	public static void main(String[] args) {
-		Data dt = new Data(22, 07, 1983);
-		
-		Data dt2 = new Data();
-
+		Data dt = new Data(22, 07, 1983, "sábado");
 		System.out.println(dt.obterDataFormatada("terça"));
-		System.out.println(dt2.obterDataFormatada());
+		
+		
+		Data dt2 = new Data(1, 01, 1994, "quinta");
+		dt2.imprimirDataFormatada();
 	}
 }

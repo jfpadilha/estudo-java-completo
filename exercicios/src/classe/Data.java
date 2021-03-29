@@ -35,7 +35,13 @@ public class Data {
 		this.mes = mes;
 		this.ano = ano;
 		this.diaSemana = diaSemana;
+
 	}
+
+	/**
+	 * ************** Metodos
+	 * 
+	 */
 
 	String obterDataFormatada() {
 		/*
@@ -43,23 +49,24 @@ public class Data {
 		 * dt.append(dia).append('/').append(mes).append('/').append(ano); return
 		 * dt.toString();
 		 */
-		
-		final String formato = "%d/%d/%d";	//será uma constante local
-		
+
+		final String formato = "%d/%d/%d"; // será uma constante local
+
 		return String.format(formato, this.dia, this.mes, this.ano);
 	}
 
 	String obterDataFormatada(String diaSemana) {
+
 		/*
 		 * StringBuilder dt = new StringBuilder();
 		 * dt.append(dia).append('/').append(mes).append('/').append(ano).append(" - ").
 		 * append(diaSemana); return dt.toString();
 		 */
-		return String.format("%d/%d/%d - %s\n", this.dia, this.mes, this.ano, diaSemana.toUpperCase());
+		return String.format("%d/%d/%d - %s\n", this.dia, this.mes, this.ano, this.diaSemana.toUpperCase());
 	}
 
 	void imprimirDataFormatada() {
-		System.out.println(this.obterDataFormatada());
+		System.out.println(obterDataFormatada(this.diaSemana));
 	}
 
 }
