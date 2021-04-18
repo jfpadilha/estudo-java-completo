@@ -1,0 +1,277 @@
+
+=========| Visão geral de algoritmos:
+
+- Algoritmo é uma sequencia de passos, que podem se repetir até que:
+	ter ma quantidade X de repetições ou até que algo fora ocorra
+
+- Algoritmo pode ter descisão
+
+- Algotitmo não é software
+
+-----| Representação de algotitmos
+- Fluxogramas
+- linguagem natural
+- linguagem artificial (java, php, js, go etc)
+- pseudo-linguagem (soma dois valores)
+
+=======| Estruturas de dados básicas:
+- Int
+- Real
+- Letra
+- Boll
+
+=======| TIPOS PRIMITIVOS (java possui 8 tipos)
+
+--| Numericos inteiros:
+- Byte 	1 byte -> -128 a 127
+- Short 2 byte -> 0 a 32767 + e -
+- Int	4 byte -> 2 bi
+- Long	8 Byte -> maior qe Int
+
+--| Numerivos flutuantes
+- FLoat		4 byte
+- Double	8 byte
+
+--| 
+- CHar	-> caracteres alfanumerico
+- Boolean -> falso ou true
+- 
+
+--| textos que aprecem em roxo são palavras reservadas da linguagem java
+Junto com essas palavras estao os tipos primitivos
+
+==| CTRL + shift + o -> organização dos imports
+
+
+========== | Aula 29
+
+====| Sobre Wrappers - tipos primitivos:
+- na conversao entre tipos numéricos:
+existem 4 tipos numéricos inteiros
+- byte, short, int e long
+
+- Converter byte -> short -> int -> long | é feita conversao implícita (um cabe no próximo não tem problema para conversao)
+
+- Agora converter ao contrário, precisa fazer de forma explícita
+
+
+***************************** | #31 - Conversao numero -> String
+
+
+***************************** | #40 - Operadores lógicos e tabela verdade
+
+===== | Função AND (E) -> &&
+bit a bit
+Só será TRUE se as duas condições forem TRUE
+Se tiver apenas 1 false o resultado sempre será false
+
+===== | Função OR (OU) -> ||
+Se qualquer uma das condições for TRUE resultado será TRUE
+Se as 2 condições forem TRUE o resultado será TRUE
+Se apenas uma de todas as condições forem TRUE resultado será TRUE
+No demais será FALSE
+
+===== | Função XOR (OU EXCLUSIVO) -> ~
+Se 2 condições TRUE resultado será FALSE
+Se apenas 1 das condições for TRUE resultado TRUE
+Se todas as condições forem FALSE resultado FALSE
+
+===== | Negação NOT (NÃO - INVERTIDO) -> !
+Se for "!TRUE" resulado é falso
+se for "!FALSE" resultado é TRUE
+
+
+============ | #49 JRE JDK
+
+Quando é executado um ".java" é gerada uma compilação
+
+JRE - Java Runtime Enviromet (user) esse é jvm
+JDK -  Java Development Kit (kit de desenv java)
+
+Dentro dos 2 existe a JVM Java virtual Machine:
+
+- o código é escrito em .java -> gerado arquivo .class -> convertido para "byteCode"
+
+- após o código escrito, pode ser executado em qualquer plataforma, desde que possua a JVM instalada
+
+
+
+=========== | #50 JAVA vs JAVAC
+
+JavaC -> é o compilador, que transforma o .java em .class
+Java ->  chama a máquina virtual para interpretar o arquivo .class
+
+
+=============| 
+
+Igr828313??!
+Book828313??!
+Stacione ST
+Stljd401srl
+
+
+=============| 84. Classe vs Objeto #01
+
+- Orientação a objetos é a tentativa de trazer a complexidade do mundo real para dentro de uma aplicação
+
+
+- Classes tem atributos e comportamentos
+
+- Quais são os mebros de uma classe?
+-> Atributos: dados (int, date, int, String, boolean, produto)
+-> Comportamentos: são os métodos que possuem os algoritmos
+
+
+
+
+=============| #85. Classe vs Objeto #02
+
+- Classe define o tipo
+
+- Classe represeta uma abstração
+
+- Objeto == instância
+"acabei de instanciar 3 objetos do tipo produto (chamei 3 vezes a classe produto) "
+
+- A classe define a estrutura, os valores (dados) mudam mas a estrutura permanece a mesma
+
+- A partir de um molde pode gerar quantos objetos quiser
+
+- "Construtor" é o método especial - responsavel por a partir de uma classe criar o objeto (new), é a chamada do construtor
+
+
+=============| #86. Membros de uma Classe
+
+- Atributos: constantes ou variáveis
+- Construtores: pode chamar quantos construtores quiser (chamados pelo "new")
+- Métodos: blocos de códigos que fazem alguma função ou cálculo
+- Classes: pode ser criado uma classe dentro de outra
+
+Definição dos membros da classe:
+- "STATIC" diz que o atributo pertence a classe e não ao objeto
+
+- a partir de um objeto consegue-se acessar os menbros dele usando ponto (.) 
+ex: "objeto.mebro"
+
+
+=============| #90. Métodos #01
+- Método: é um comportamento, está relacionado ao algoritmo ou a ação
+
+- Anatomia do metodo:
+
+tipoDeRetorno nomeMetodo (parametrosDeEntrada) {
+----;
+----;
+
+return var;
+}
+
+ou
+
+void nomeMetodo () {
+----;
+----;
+//void nao retorna nada
+}
+
+--> Exemplo: recebe 2 entradas e retorna uma soma:
+
+int somar (int n1, int n2){
+	return n1 + n2;
+}
+
+---> Identidade do metodo:
+boolean (int a, float b){ //essa linha 
+	return
+}
+
+
+=============| #94. Construtor #01
+
+-> Construtor é um método especial que cria as instancias da classe
+
+-> Restrições para criar um construtor:
+	1- deve ter o mesmo nome da classe
+	2- construtor não tem retorno
+
+Criando um construtor:
+
+class NomeDaClasse {
+	NomeDaClasse (int a) {	//Não pode ter "void" nem tipo para ser construtor
+	//algoritmo
+	}
+}
+
+=============| #98. Membros de Classe vs Instância #01
+
+Classe Data
+int dia;
+int mes;
+int ano;
+
+- A cada instancia criada "new Data", é criada uma instancia diferente para colocar valores
+
+- Quando se usa o "static" no nome da variável essa variável será um atributo da classe, e não mais atributo da instãncia, estará associado apenas na classe
+
+Classe Data
+int static dia;
+int mes;
+int ano;
+
+- O dia terá apenas 1 valor e não vários valores (um em cada instancia)
+
+- Nesse caso terá 1 classe (objeto) para --> N objetos
+- Para chamar a variável não precisa chamar o construtor, chama-se diretamente pela classe
+
+Para chamar uma variável estática de uma classe, exemplo:
+
+public class Math {
+	static double PI = 3.14;
+}
+
+para chamada:
+System.out.println(Math.PI);
+
+----
+ 
+
+
+=============| #109 - Valores Null
+
+- quando existe uma variável que não aponta para um local na memória, ocorre o erro Erro "null pointer exception"
+
+- Uma variável é um espaço na memória, ex: < String s1 = "" >, onde foi inicializada uma variável com valor
+
+- Erro de compilação é um erro que não permite que o programa não execute, ex.: < String s0; > o compilador não vai permitir a conversão de um .java para um .class, ou seja, alguma regra da linguagem foi violada
+
+- Erro de runtime, erro em tempo de execução, ex.: < String s2 = null; > a variável foi inicializada, o código irá compilar, porém ocorrerá o erro "NullPointerException"
+	- é a tentativa de acessar algum atributo ou comportamento de uma variável nula
+	- não se pode nem acessar um método ou atributo de algo que está nulo ou algo não aponta para um objeto real na memória
+	- se quiser garantir que não seja acessada uma variável nula, então realiza-se um teste como:
+		"if(var != null) {
+				var.atributo = 3;
+				}"
+
+
+
+
+=============| 
+
+=============| 
+
+=============| 
+
+=============| 
+
+=============| 
+
+=============| 
+
+=============| 
+
+=============| 
+
+=============| 
+
+=============| 
+

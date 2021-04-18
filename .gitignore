@@ -6,7 +6,6 @@ print_aula.png
 # Sublimes inuteis
 *.sublime-workspace
 *.sublime-project
-notes.txt
 *project
 *classpath
 
