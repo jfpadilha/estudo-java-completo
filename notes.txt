@@ -254,8 +254,58 @@ System.out.println(Math.PI);
 
 
 
+=============| #115 - Array/vetor e colection/matriz (conceitos) - 01
 
-=============| 
+- Características do array:
+	- Array é uma estrutura estática, possui tamanho fixo, define-se isso na criação
+	- o Array é homogêneo, precisa definit o seu tipo
+	- Array é um objeto (possui atributos e )
+
+
+- Criando um array
+	- int [ ] a = new int[6]; 		(criado um array do tipo inteiro nome 'a' com 6 posições)
+	- double [ ] b = new double[6];
+
+- definindo um valor em um indice do array:
+	- a[2] = 10;			(índice 2 do array, terceira posição, terá o valor 100 gravado nele)
+	- a[0] = 9;
+
+- acessando um array:
+	- não se usa notação . (ponto) para acessar um elemento do array Ex. a[2]. (nunca usar)
+	- usa-se a. (nomeDoVetor.atributo)
+	- exemp de acesso
+		System.out.print(a[5]);
+
+- array pré-definido, exemp de criação:
+	String a[] = {"segunda", "terça", "quarta"};
+
+
+- array pós-definido exem de criação:
+	String a = new String[3];
+	a[0] = "segunda";
+	a[1] = "terça";
+	a[2] = "quarta";
+	
+
+
+==== | Matriz/colection: 
+	- basicamente é um array dentro de outro
+
+	- exemp de criação matriz pré-definida:
+		int m [][] = {
+				{2, 3, 6}
+				{5, 4, 2}
+				{6, 8, 9}
+		}
+
+	- exemp de criação de matriz pós-definida:
+		int m = new int [3][3];
+			m [0][1] = 7;
+			m [0][2] = 7;
+			m [1][1] = 7;
+			m [1][2] = 7;
+			m [2][1] = 7;
+			m [2][2] = 7;
 
 =============| 
 
