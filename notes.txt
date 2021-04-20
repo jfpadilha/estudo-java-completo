@@ -307,7 +307,19 @@ System.out.println(Math.PI);
 			m [2][1] = 7;
 			m [2][2] = 7;
 
-=============| 
+=============| #116 - Array/vetor (pratica) - 02
+	- arrayName.length (retorna o tamanho do array)
+
+	- Criando um array (vetor) pós-definido
+		double arrayName[] = new double[3];
+		arrayName[0] = 7.9;
+		arrayName[1] = 9;
+		arrayName[2] = 6.7;
+
+	- Criando um array (vetor) pré-definido
+		double arrayName[] = { 6.9, 8.9, 5.9,10};
+
+
 
 =============| 
 
