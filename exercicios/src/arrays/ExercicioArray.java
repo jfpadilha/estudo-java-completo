@@ -25,8 +25,7 @@ public class ExercicioArray {
 		double vetorNotas[] = new double[qtdNotasInt];
 
 		for (int i = 0; i < qtdNotasInt; i++) {
-			int n = i + 1;
-			String sn = JOptionPane.showInputDialog("digite a nota " + n);
+			String sn = JOptionPane.showInputDialog("digite a nota " + (i + 1));
 			vetorNotas[i] = Double.parseDouble(sn.replace(",", "."));
 		}
 
