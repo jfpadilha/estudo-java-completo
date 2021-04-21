@@ -321,7 +321,19 @@ System.out.println(Math.PI);
 
 
 
-=============| 
+=============| #117 - Foreach
+
+	- Laço muito usado em arrays e coleções
+
+	//		Foreach
+			for(double nota: notas) { 	//"nota"
+				System.out.println(nota);			
+			}
+
+- Basicamente:
+		for(tipo nomeVariavel: array)
+
+
 
 =============| 
 
