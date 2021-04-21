@@ -30,7 +30,17 @@ public class ExercicioArray {
 			vetorNotas[i] = Double.parseDouble(sn.replace(",", "."));
 		}
 
-		System.out.println(Arrays.toString(vetorNotas));
+		double total = 0;
+		double media = 0;
+
+		for (double d : vetorNotas) {
+			total += d;
+		}
+		media = total / qtdNotasInt;
+
+		System.out.println("Vetor notas: " + Arrays.toString(vetorNotas));
+		System.out.println("Média: " + media);
+		System.out.println("Total notas: " + total);
 
 	}
 
