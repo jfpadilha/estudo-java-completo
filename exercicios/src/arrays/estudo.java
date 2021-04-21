@@ -14,6 +14,8 @@ public class estudo {
 
 //		Imprimindo um array (vetor)
 		System.out.println(Arrays.toString(notasAlunoA));
+		System.out.println("Prim nota " + notasAlunoA[0]);
+		System.out.println("Últ nota " + notasAlunoA[notasAlunoA.length -1]);
 
 //		Percorrendo um array (vetor)
 		double totalAlunoA = 0;
@@ -22,10 +24,13 @@ public class estudo {
 		}
 		System.out.printf("Total A: %.1f \nMédia A: %.1f\n\n", totalAlunoA, totalAlunoA / notasAlunoA.length);
 
+
 //		Criando um array (vetor) pré-definido
 		final double notaArmazenada = 5.9;
+		
 		double notasAlunoB[] = { 6.9, 8.9, notaArmazenada, 10 };
 		double totalAlunoB = 0;
+		
 		for (int i = 0; i < notasAlunoB.length; i++) {
 			totalAlunoB += notasAlunoB[i];
 		}
