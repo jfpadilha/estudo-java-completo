@@ -2,7 +2,7 @@ package arrays;
 
 import java.util.Arrays;
 
-public class estudo {
+public class EstudoArray {
 
 	public static void main(String[] args) {
 
