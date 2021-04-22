@@ -335,7 +335,38 @@ System.out.println(Math.PI);
 
 
 
-=============| 
+=============| #120 - Matriz
+
+- Criando uma matriz:
+	int linhas = 2;
+	int colunas = 3;
+
+	double mat[][] = new double[Linhas][Colunas];
+
+
+- Percorrendo matriz e inserindo os dados:
+
+	for(int lin = 0; lin < mat.length; lin++) {
+
+		for(int col = 0; col < mat.length; col++) {
+
+			mat[lin][col] = "algoritmo para inserir o dado nesse ponto";
+
+		}
+	}
+
+
+- Percorrendo Matriz com Foreach (nesse caso imprimindo)
+	
+	for(double mat2 : mat) {
+
+		System.Out.println(Arrays.toString(mat2));
+
+	}
+
+	* Faz-se necessário a importação da classe "Arrays"
+
+
 
 =============| 
 
