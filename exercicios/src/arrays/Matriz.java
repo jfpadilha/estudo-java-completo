@@ -1,5 +1,7 @@
 package arrays;
 
+import java.util.Arrays;
+
 import javax.swing.JOptionPane;
 
 public class Matriz {
@@ -19,12 +21,13 @@ public class Matriz {
 
 		for (int i = 0; i < qtdAlunos; i++) { // Qtd de linhas
 			for (int j = 0; j < qtdNotas; j++) { // Qtd de colunas
-				String sn = JOptionPane.showInputDialog("Nota: " + (j + 1));
-
+				String sn = JOptionPane.showInputDialog("Nota: " + (j + 1) + " | aluno: " + (i + 1));
 				matrizNotasTurma[i][j] = Double.parseDouble(sn.replace(",", "."));
 
 				System.out.print((matrizNotasTurma[i][j]) + " | ");
+
 				notaTurma += Double.parseDouble(sn.replace(",", "."));
+
 				notaTotalindivirual += Double.parseDouble(sn.replace(",", "."));
 			}
 			media = notaTotalindivirual / qtdNotas;
@@ -34,10 +37,17 @@ public class Matriz {
 		}
 
 		System.out.println("\n");
-
 		media = notaTurma / (qtdAlunos * qtdNotas);
+
 		System.out.println("Média geral: " + media);
 		System.out.println("Nota turma: " + notaTurma);
+
+		System.out.println("\nForeach para imprimir a matriz:");
+
+		for (double[] ds : matrizNotasTurma) {
+
+			System.out.println(Arrays.toString(ds));
+		}
 	}
 
 }
