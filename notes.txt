@@ -368,7 +368,47 @@ System.out.println(Math.PI);
 
 
 
-=============| 
+=============| #121 - Entendendo Equals e Hashcode (comparação / busca / localização)
+
+- Quando compara-se "2 == 2" -> resultado é "true"
+
+- Quando compara-se "p1 == p2" -> resultado é "false"
+	- sendo que o objeto p1 foi definido: "p1.nome = "caneta"
+	- sendo que o objeto p2 também foi definido: "p2.nome = "caneta"
+
+	- Sempre que for comparado usando "==" está comparando endereços de memória, então:
+
+	- resultado é "false" porque p1 está no endereço de memória 0x123
+	- e p2 está no endereço de memória 0x234
+
+	- deve-se perguntar: a comparação é do ponto de vista de endereço de memória ou do ponto de vista de objeto
+
+	- comparando se os atributos são iguais comparativo por objeto:
+	p1.equals(p2) => retornará "false" (por padrão não fazendo nada o comportamento é comparativo "==")
+
+
+=========
+
+- "Equals" vem junto com outra função chamada "Hashcode"
+
+- o java tem uma estrutura conjunto com nome de "hashSet" -> existe um conjunto com 10 mil produtos e precisa-se encontrar 1 em todos estes
+- o "hashSet" usa o conceito de "HashCode"
+
+- o hashCode -> retorna um valor inteiro
+- o equals -> retorna "true/false"
+
+--> Colocando pra rodar uma busca/comparação:
+- usa-se o "hash" para buscar o dado que possui o número de caracteres desejado e montar uma lista destes, só apos criar essa lista, então é hora de usar o "equals"
+
+*** Para comparação/busca o hashCode e equals trabalham em conjunto, usar sempre os dois métodos:
+	- hashCode
+	- Equals
+
+
+Obs: equals é lento, por isso se faz necessário utilizar em conjunto com algo que facilite a sua busca
+
+* tipos primitivos não fazem essa distinção.
+
 
 =============| 
 
